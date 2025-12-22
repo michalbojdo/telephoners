@@ -1,15 +1,13 @@
 <script setup lang="ts">
-import Header from "@/components/Header.vue";
+import HeaderSection from "@/components/HeaderSection.vue";
 </script>
 
 <template>
-  <Header />
+  <HeaderSection />
   <div class="background-image" />  
   <div class="background-tint" />
 
-  <main>
-    <TheWelcome />
-  </main>
+
 </template>
 
 <style scoped>
