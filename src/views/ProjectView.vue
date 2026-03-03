@@ -3,25 +3,30 @@ import HeaderSection from "@/components/HeaderSection.vue";
 </script>
 
 <template>
-  <div class="background-image" />
+  <div class="cont">
+      <div class="background-image" />
 
-  <h1>
-    SKN<br />
-    TELE<br />PHON<br />ERS
-  </h1>
-    <div class="routes">
-      <h3>
-        <RouterLink to="/projects">Projekty</RouterLink>
-      </h3>
-      <h3>
-        <RouterLink to="/events">Wydarzenia</RouterLink>
-      </h3>
-      <h3>
-        <RouterLink to="/contact ">Kontakt</RouterLink>
-      </h3>
-      <h3>
-        <RouterLink to="/recruitation"><span>Rekrutacja 2026</span></RouterLink>
-      </h3>
+      <h1>
+        AGH<br />
+        RESCUE<br />
+        DRONE
+      </h1>
+      <div class="routes">
+        <h3>
+          <RouterLink to="/projects">Projekty</RouterLink>
+        </h3>
+        <h3>
+          <RouterLink to="/events">Wydarzenia</RouterLink>
+        </h3>
+        <h3>
+          <RouterLink to="/contact ">Kontakt</RouterLink>
+        </h3>
+        <h3>
+          <RouterLink to="/recruitation"
+            ><span>Rekrutacja 2026</span></RouterLink
+          >
+        </h3>
+      </div>
     </div>
 </template>
 
@@ -47,7 +52,7 @@ import HeaderSection from "@/components/HeaderSection.vue";
 
 h1 {
   width: 100%;
-  padding:0rem 1rem;
+  padding: 0rem 1rem;
   line-height: 1;
   font-size: 16vh;
   color: rgb(255, 255, 255);
@@ -81,9 +86,9 @@ h3:not(has(span)) {
 }
 
 .background-image {
-  background-image: url("@/assets/antenna.png");
+  background-image: url("@/assets/projects/rescue-drone/banner.webp");
   /* background: linear-gradient(to bottom, rgb(88, 88, 88), transparent);   */
-/* background-color: #000000;
+  /* background-color: #000000;
 opacity: 0.8;
 background-image: linear-gradient(45deg, #00f 50%, #000000 50%);
 background-size: 37px 37px; */
@@ -103,27 +108,26 @@ background-size: 37px 37px; */
 @media only screen and (max-width: 1000px) {
   .tele-panel {
     padding: 0rem 0rem 0rem 0rem;
-  
   }
   .routes {
     display: block;
     padding: 0.5rem;
 
     h3 {
-    line-height: 1.1;
-    font-size: 4vh;
-    padding:  0.2rem;
+      line-height: 1.1;
+      font-size: 4vh;
+      padding: 0.2rem;
 
-    a {
-      text-decoration: none;
+      a {
+        text-decoration: none;
+      }
+      a > span {
+        background-color: #fff;
+        color: var(--tele-black);
+        padding: 5px;
+        line-height: 1.5;
+      }
     }
-    a > span {
-      background-color: #fff;
-      color: var(--tele-black);
-      padding: 5px;
-      line-height: 1.5;
-    }
-  }
   }
   .header-container {
     display: flex;
@@ -146,6 +150,5 @@ background-size: 37px 37px; */
       -webkit-text-stroke: 5px white;
     }
   }
-  
 }
 </style>
