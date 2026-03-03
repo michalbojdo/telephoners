@@ -83,13 +83,10 @@ h3:not(has(span)) {
 .background-image {
   background-image: url("@/assets/antenna.png");
   /* background: linear-gradient(to bottom, rgb(88, 88, 88), transparent);   */
-/* background-color: #000000;
-opacity: 0.8;
-background-image: linear-gradient(45deg, #00f 50%, #000000 50%);
-background-size: 37px 37px; */
-  filter: opacity(1) saturate(0) brightness(0.6);
+  width:100vw;
+  filter: opacity(1) saturate(1) brightness(0.6);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   left: 0;
   top: 0;

@@ -32,8 +32,8 @@
         <div>
           <div class="container">
             <div>
-              <h2>Za nami</h2>
-              <h5>Już setki projektów</h5>
+              <h2>Nowoczesne laboratoria</h2>
+              <h5>i duża baza tekstów branżowych oraz podręczników technicznych na potrzeby projektów naszych członków</h5>
             </div>
           </div>
         </div>
@@ -61,6 +61,7 @@
   padding: 2rem 1rem;
   overflow-x: none;
   width: 30%;
+  height:max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;

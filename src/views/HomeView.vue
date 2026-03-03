@@ -3,6 +3,7 @@ import HeaderSection from "@/components/HeaderSection.vue";
 import ProjectsSection from "@/components/home/ProjectsSection.vue";
 import WelcomeSection from "@/components/home/WelcomeSection.vue";
 import AboutSection from "@/components/home/AboutSection.vue";
+import EventsSection from "@/components/home/EventsSection.vue";
 </script>
 
 <template>
@@ -12,9 +13,11 @@ import AboutSection from "@/components/home/AboutSection.vue";
     <WelcomeSection />
     </div>
     <div class="con">
-
+      <div>
     <ProjectsSection />
     <AboutSection/>
+    </div>
+      <EventsSection/>
     </div>
 
   </div>
@@ -29,11 +32,19 @@ import AboutSection from "@/components/home/AboutSection.vue";
 }
 .con{
   display:flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  >div{
+    align-items: stretch;
+    display:flex;
+    flex-direction: row-reverse;
+  }
 }
 @media only screen and (max-width:1000px){
   .con{
-    flex-direction: column-reverse;
+    flex-direction: column;
+    >div{
+      flex-direction: column-reverse;
+    }
   }
 }
 </style>

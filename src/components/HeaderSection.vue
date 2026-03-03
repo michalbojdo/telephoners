@@ -2,7 +2,11 @@
   <header>
     <h2>
       <div>
-        <img class="icons" src="@/assets/logos/logo_light_lb.svg" />
+        <img class="icons" src="@/assets/logos/logo_light_lb.svg" />    
+                <img class="icons" src="@/assets/logos/logo_agh.png" />
+                <img class="icons" src="@/assets/logos/logo_wiet.png" />    
+
+
       </div>
       <div class="icons social-media">
         <img src="@/assets/logos/logo_light_lb.svg" />
@@ -41,7 +45,7 @@ header {
   display: flex;
   justify-content: flex-end;
   * {
-    height: 2rem;
+    height: 7vh !important;
     margin: 5px;
   }
 }

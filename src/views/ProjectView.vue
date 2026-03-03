@@ -3,8 +3,8 @@ import HeaderSection from "@/components/HeaderSection.vue";
 </script>
 
 <template>
-  <div class="cont">
-      <div class="background-image" />
+  <div class="cont project-view">
+      <div class="background-image-project" />
 
       <h1>
         AGH<br />
@@ -13,24 +13,22 @@ import HeaderSection from "@/components/HeaderSection.vue";
       </h1>
       <div class="routes">
         <h3>
-          <RouterLink to="/projects">Projekty</RouterLink>
-        </h3>
-        <h3>
-          <RouterLink to="/events">Wydarzenia</RouterLink>
-        </h3>
-        <h3>
-          <RouterLink to="/contact ">Kontakt</RouterLink>
-        </h3>
-        <h3>
-          <RouterLink to="/recruitation"
-            ><span>Rekrutacja 2026</span></RouterLink
-          >
-        </h3>
+        <RouterLink to="/projects">Cele</RouterLink>
+      </h3>
+      <h3>
+        <RouterLink to="/events">Członkowie</RouterLink>
+      </h3>
+      <h3>
+        <RouterLink to="/contact ">Granty</RouterLink>
+      </h3>
       </div>
     </div>
 </template>
 
 <style>
+.project-view{
+  align-content: end;
+}
 .header-container {
   display: flex;
   flex-direction: column;
@@ -85,16 +83,16 @@ h3:not(has(span)) {
   }
 }
 
-.background-image {
+.background-image-project {
   background-image: url("@/assets/projects/rescue-drone/banner.webp");
-  /* background: linear-gradient(to bottom, rgb(88, 88, 88), transparent);   */
-  /* background-color: #000000;
+  /* background: linear-gradient(to bottom, rgb(88, 88, 88), transparent);  
+  background-color: #000000;
 opacity: 0.8;
 background-image: linear-gradient(45deg, #00f 50%, #000000 50%);
 background-size: 37px 37px; */
   filter: opacity(1) saturate(0) brightness(0.6);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   left: 0;
   top: 0;
