@@ -4,47 +4,51 @@ import ProjectsSection from "@/components/home/ProjectsSection.vue";
 import WelcomeSection from "@/components/home/WelcomeSection.vue";
 import AboutSection from "@/components/home/AboutSection.vue";
 import EventsSection from "@/components/home/EventsSection.vue";
+import FooterSection from "@/components/FooterSection.vue";
 </script>
 
 <template>
-  <div class="container">
-    <div class="cont">
-    <HeaderSection />
-    <WelcomeSection />
+  <div class="home-container">
+    <div class="home-start">
+      <HeaderSection />
+      <WelcomeSection />
     </div>
-    <div class="con">
+    <div class="home-sections">
       <div>
-    <ProjectsSection />
-    <AboutSection/>
+        <ProjectsSection />
+        <AboutSection />
+      </div>
+      <EventsSection />
     </div>
-      <EventsSection/>
-    </div>
-
+    <FooterSection />
   </div>
 </template>
 
 <style>
-.cont{
-  display:grid;
+.home-start {
+  display: grid;
   height: 100%;
-  min-height:100vh;
-  align-items:stretch;
+  min-height: 100vh;
+  align-items: stretch;
 }
-.con{
-  display:flex;
+.home-sections {
+  background-color: var(--tele-black);
+  display: flex;
   flex-direction: column;
-  >div{
+  > div {
     align-items: stretch;
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
   }
 }
-@media only screen and (max-width:1000px){
-  .con{
+@media only screen and (max-width: 1000px) {
+  .home-sections {
     flex-direction: column;
-    >div{
+    > div {
       flex-direction: column-reverse;
     }
   }
+}
+@media only screen and (max-width: 740px) {
 }
 </style>

@@ -1,33 +1,33 @@
 <template>
-  <main class="projects-panel">
-    <h1>PROJEKTY</h1>
-    <article class="important-project rescue-drone">
+  <main class="projects-panel home-panel">
+    <h2>PROJEKTY</h2>
+    <article class="home-article article-1">
       <div>
         <div class="container">
           <div>
-            <h2>AGH Rescue Drone</h2>
+            <h3>AGH Rescue Drone</h3>
             <h5>
               Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
               systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
               zapewnienia tymczasowej łączności telekomunikacyjnej i analizy
               wideo w czasie rzeczywistym w trudno dostępnych miejscach
             </h5>
-            <div class="grants">
+            <!-- <div class="grants">
               <h4 class="grant">grant <br />rektora <br />2023</h4>
               <h4 class="grant">grant <br />rektora <br />2024</h4>
 
               <h4 class="grant">grant <br />rektora <br />2025</h4>
-            </div>
+            </div> -->
             <h4>Więcej-></h4>
           </div>
         </div>
       </div>
     </article>
-    <article class="important-project campus-app">
+    <article class="home-article article-2">
       <div>
         <div class="container">
           <div>
-            <h2>Aplikacja miasteczkowa</h2>
+            <h3>Aplikacja miasteczkowa</h3>
             <h5>
               Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
               systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
@@ -39,11 +39,11 @@
         </div>
       </div>
     </article>
-    <article class="important-project greenhouse">
+    <article class="home-article article-3">
       <div>
         <div class="container">
           <div>
-            <h2>Smart szklarnia</h2>
+            <h3>Smart szklarnia</h3>
             <h5>
               Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
               systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
@@ -59,11 +59,21 @@
 </template>
 
 <style>
+h2, h4{
+
+    transition:250ms;
+    cursor:alias;
+}
+h3{
+  font-size: large;
+}
 .projects-panel {
-  h1 {
+  h2 {
     font-size: 8.5vw;
     color: #fff;
     padding: 0;
+    transition:250ms;
+    cursor:alias;
   }
   h5 {
     font-family: Arial, Helvetica, sans-serif;
@@ -71,7 +81,6 @@
   h2,
   h4 {
     text-transform: uppercase;
-    padding: 0.5rem 0rem;
   }
   h4{
     font-size: smaller;
@@ -94,40 +103,21 @@
   font-size: 3vh;
   background: var(--tele-black);
 
-  .important-project {
+  .home-article {
+    
     background-position: center;
     background-size: cover;
     cursor:pointer;
-  }
-  .important-project:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .rescue-drone {
-    color: var(--tele-black);
-    .container {
-      padding: 1rem 1rem;
-      z-index: -2;
-      background-color: rgb(255, 255, 255);
-    }
-  }
-  .campus-app {
-    .container {
-      z-index: -2;
-      padding: 2rem 1rem;
-    }
-  }
-  .greenhouse {
-    color: #fff;
-    .container {
-      z-index: -2;
-      padding: 2rem 1rem;
-      background-color: var(--accent-color);
-    }
   }
 }
 @media only screen and (max-width: 1000px) {
   .projects-panel {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 740px){
+  .home-panel{
+    padding:2rem 0rem;
   }
 }
 </style>

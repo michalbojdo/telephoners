@@ -90,7 +90,7 @@ h3:not(has(span)) {
 opacity: 0.8;
 background-image: linear-gradient(45deg, #00f 50%, #000000 50%);
 background-size: 37px 37px; */
-  filter: opacity(1) saturate(0) brightness(0.6);
+  filter: opacity(1) saturate(1) brightness(0.8);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

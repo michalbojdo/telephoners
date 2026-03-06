@@ -1,11 +1,20 @@
+<script setup lang="ts">
+import TagChip from '@/components/TagChip.vue';
+
+</script>
+
 <template>
-  <main class="events-panel">
-    <h1>WYDARZENIA</h1>
-    <article class="important-project rescue-drone">
+  <main class="events-panel home-panel">
+    <h2>WYDARZENIA</h2>
+    <article class="home-article article-1">
       <div>
         <div class="container">
           <div>
-            <h2>Spotkanie koła</h2>
+            <h3>Spotkanie koła</h3>
+            <div class="tags">
+              <TagChip text="Spotkanie"/><TagChip text="Dla członków"/>
+
+            </div>
             <h5>
               Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
               systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
@@ -17,11 +26,14 @@
         </div>
       </div>
     </article>
-    <article class="important-project campus-app">
+    <article class="home-article article-2">
       <div>
         <div class="container">
           <div>
-            <h2>Rekrutacja 2026</h2>
+            <h3>Rekrutacja 2026</h3>
+            <div class="tags">
+              <TagChip text="rekrutacja" invert/>
+            </div>
             <h5>
               Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
               systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
@@ -38,7 +50,7 @@
 
 <style>
 .events-panel {
-  h1 {
+  h2 {
     font-size: 8.5vw;
     color: #fff;
     padding: 0;
@@ -72,40 +84,24 @@
   font-size: 3vh;
   background: var(--tele-black);
 
-  .important-project {
+  .home-article {
     background-position: center;
     background-size: cover;
     cursor:pointer;
   }
-  .important-project:nth-child(2) {
+  .home-article:nth-child(2) {
     flex-direction: row-reverse;
   }
-  .rescue-drone {
-    color: var(--tele-black);
-    .container {
-      padding: 1rem 1rem;
-      z-index: -2;
-      background-color: rgb(255, 255, 255);
-    }
-  }
-  .campus-app {
-    .container {
-      z-index: -2;
-      padding: 2rem 1rem;
-    }
-  }
-  .greenhouse {
-    color: #fff;
-    .container {
-      z-index: -2;
-      padding: 2rem 1rem;
-      background-color: var(--accent-color);
-    }
-  }
+  
 }
 @media only screen and (max-width: 1000px) {
   .projects-panel {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 740px){
+  .projects-panel{
+    padding:2rem 0rem;
   }
 }
 </style>

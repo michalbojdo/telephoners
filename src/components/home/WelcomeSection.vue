@@ -7,7 +7,7 @@ import HeaderSection from "@/components/HeaderSection.vue";
 
   <h1>
     SKN<br />
-    TELE<br />PHON<br />ERS
+    TELE<br>PHON<br>ERS
   </h1>
     <div class="routes">
       <h3>
@@ -50,8 +50,9 @@ h1 {
   padding:0rem 1rem;
   line-height: 1;
   font-size: 16vh;
-  color: rgb(255, 255, 255);
-  align-items: center;
+  font-weight:300;
+  color: #f0f0f0;
+  align-items: center; 
   span {
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 5px rgb(0, 0, 0);
@@ -60,19 +61,21 @@ h1 {
     height: 16vw;
   }
 }
-h3:not(has(span)) {
+h3 {
+  text-transform: uppercase;
   line-height: 1.1;
-  font-size: 2vw;
   margin: 8px 2px;
 
   a {
+      text-transform: uppercase;
+    padding:5px;
     text-decoration: none;
+    transition:250ms;
   }
   a > span {
     background-color: #fff;
     color: var(--tele-black);
     padding: 5px;
-    line-height: 1.5;
   }
 
   a:hover {
@@ -81,7 +84,7 @@ h3:not(has(span)) {
 }
 
 .background-image {
-  background-image: url("@/assets/antenna.png");
+  background-image: url("@/assets/tele.JPG");
   /* background: linear-gradient(to bottom, rgb(88, 88, 88), transparent);   */
   width:100vw;
   filter: opacity(1) saturate(1) brightness(0.6);
@@ -110,6 +113,7 @@ h3:not(has(span)) {
     line-height: 1.1;
     font-size: 4vh;
     padding:  0.2rem;
+    
 
     a {
       text-decoration: none;

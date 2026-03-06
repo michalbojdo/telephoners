@@ -1,27 +1,24 @@
 <template>
   <header>
-    <h2>
       <div>
         <img class="icons" src="@/assets/logos/logo_light_lb.svg" />    
-                <img class="icons" src="@/assets/logos/logo_agh.png" />
+                <!-- <img class="icons" src="@/assets/logos/logo_agh.png" /> -->
                 <img class="icons" src="@/assets/logos/logo_wiet.png" />    
 
 
       </div>
       <div class="icons social-media">
-        <img src="@/assets/logos/logo_light_lb.svg" />
+        <!-- <img src="@/assets/logos/logo_light_lb.svg" /> -->
         <img src="@/assets/social-media/linkedin.png" />
         <img src="@/assets/social-media/facebook.png" />
         <img src="@/assets/social-media/youtube.png" />
       </div>
-    </h2>
   </header>
 </template>
 
 <style>
 header {
   padding:0.5rem 0.5rem;
-  h2 {
     font-size: 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,15 +34,18 @@ header {
       vertical-align: middle;
     }
   }
-}
+
 .icons{
   /* filter:invert(); */
 }
 .icons.social-media {
   display: flex;
-  justify-content: flex-end;
+  justify-content: start;
+  flex-direction: column;
+  align-items: end;
+  
   * {
-    height: 7vh !important;
+    height: 6vh !important;
     margin: 5px;
   }
 }
