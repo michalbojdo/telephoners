@@ -24,6 +24,11 @@ header {
     grid-template-columns: 1fr 1fr;
     color: #000000;
     font-weight: 300;
+    width:100%;
+
+    >div{
+      width:100%;
+    }
 
     * {
       display: flex;
@@ -50,5 +55,12 @@ header {
   }
 }
 
-
+@media only screen and (max-width: 750px) {
+  .icons{
+    max-height: 24vh;
+  }
+  .icons.social-media img{
+    height:5vh !important;
+  }
+}
 </style>

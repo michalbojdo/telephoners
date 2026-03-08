@@ -74,7 +74,7 @@ h3 {
   height: 100%;
   margin: 2rem 0rem;
   align-self: flex-end;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: repeating-radial-gradient(
     circle at 50% 0px,
     transparent 0px,
@@ -134,6 +134,9 @@ h3 {
 @media only screen and (max-width: 750px) {
   .home-panel {
     padding: 2rem 0rem;
+  }
+  .icons-article{
+    display:none;
   }
 }
 </style>

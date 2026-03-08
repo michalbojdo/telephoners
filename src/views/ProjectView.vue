@@ -4,15 +4,15 @@ import HeaderSection from "@/components/HeaderSection.vue";
 
 <template>
   <div class="cont project-view">
-      <div class="background-image-project" />
+    <div class="background-image-project" />
 
-      <h1>
-        AGH<br />
-        RESCUE<br />
-        DRONE
-      </h1>
-      <div class="routes">
-        <h3>
+    <h1>
+      AGH<br />
+      RESCUE<br />
+      DRONE
+    </h1>
+    <div class="routes">
+      <h3>
         <RouterLink to="/projects">Cele</RouterLink>
       </h3>
       <h3>
@@ -21,12 +21,12 @@ import HeaderSection from "@/components/HeaderSection.vue";
       <h3>
         <RouterLink to="/contact ">Granty</RouterLink>
       </h3>
-      </div>
     </div>
+  </div>
 </template>
 
 <style>
-.project-view{
+.project-view {
   align-content: end;
 }
 .header-container {
@@ -97,7 +97,7 @@ background-size: 37px 37px; */
   .tele-panel {
     padding: 0rem 0rem 0rem 0rem;
   }
-  
+
   .header-container {
     display: flex;
     flex-direction: column;
@@ -108,16 +108,6 @@ background-size: 37px 37px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  h1 {
-    padding: 1rem 1rem;
-    line-height: 1;
-    font-size: 14vh;
-    span {
-      color: rgba(0, 0, 0, 0);
-      -webkit-text-stroke: 5px white;
-    }
   }
 }
 </style>

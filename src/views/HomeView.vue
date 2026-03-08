@@ -6,14 +6,13 @@ import AboutSection from "@/components/home/AboutSection.vue";
 import EventsSection from "@/components/home/EventsSection.vue";
 import FooterSection from "@/components/FooterSection.vue";
 
-import { useBreakpoints } from '@vueuse/core'
+import { useBreakpoints } from "@vueuse/core";
 
 const breakpoints = useBreakpoints({
   mobile: 750,
   tablet: 1000,
-})
-const isMobile = breakpoints.smaller('mobile')
-
+});
+const isMobile = breakpoints.smaller("mobile");
 </script>
 
 <template>
@@ -25,7 +24,7 @@ const isMobile = breakpoints.smaller('mobile')
     <div class="home-sections">
       <div>
         <ProjectsSection />
-        <AboutSection v-if="!isMobile"/>
+        <AboutSection v-if="!isMobile" />
       </div>
       <EventsSection />
     </div>
@@ -39,6 +38,14 @@ const isMobile = breakpoints.smaller('mobile')
   height: 100%;
   min-height: 100vh;
   align-items: stretch;
+
+  background-image: repeating-radial-gradient(
+    circle at 50% 100%,
+    transparent 0px,
+    transparent 50px,
+    #ffffff10 50px,
+    #ffffff10 52px
+  );
 }
 .home-sections {
   background-color: var(--tele-black);
@@ -60,7 +67,10 @@ const isMobile = breakpoints.smaller('mobile')
 }
 @media only screen and (max-width: 750px) {
   .home-sections {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .home-start {
+    grid-template-rows: 1fr 2fr 1fr;
   }
 }
 </style>
