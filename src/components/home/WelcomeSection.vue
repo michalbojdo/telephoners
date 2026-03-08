@@ -87,7 +87,7 @@ h3 {
   background-image: url("@/assets/tele.JPG");
   /* background: linear-gradient(to bottom, rgb(88, 88, 88), transparent);   */
   width:100vw;
-  filter: opacity(1) saturate(1) brightness(0.6);
+  filter: opacity(1) saturate(1.2) brightness(0.7) ;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,12 +106,11 @@ h3 {
   
   }
   .routes {
-    display: block;
     padding: 0.5rem;
 
     h3 {
     line-height: 1.1;
-    font-size: 4vh;
+    font-size: medium;
     padding:  0.2rem;
     
 
@@ -141,12 +140,25 @@ h3 {
   h1 {
     padding: 1rem 1rem;
     line-height: 1;
-    font-size: 14vh;
+    font-size: 14vw;
     span {
       color: rgba(0, 0, 0, 0);
       -webkit-text-stroke: 5px white;
     }
   }
   
+}
+@media only screen and (max-width: 750px) {
+  .routes {
+    display:block;
+    top:0;
+    padding: 0rem;
+
+    h3 {
+    line-height: 1.1;
+    font-size: large;
+    padding:  0.2rem;
+    }
+  }
 }
 </style>

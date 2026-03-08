@@ -38,16 +38,6 @@ import HeaderSection from "@/components/HeaderSection.vue";
   display: flex;
   flex-direction: column-reverse;
 }
-.routes {
-  background-color: var(--tele-black);
-  padding: 1rem 1rem;
-  height: min-content;
-  display: flex;
-  justify-content: space-between;
-  align-self: end;
-  width: 100%;
-}
-
 h1 {
   width: 100%;
   padding: 0rem 1rem;
@@ -107,26 +97,7 @@ background-size: 37px 37px; */
   .tele-panel {
     padding: 0rem 0rem 0rem 0rem;
   }
-  .routes {
-    display: block;
-    padding: 0.5rem;
-
-    h3 {
-      line-height: 1.1;
-      font-size: 4vh;
-      padding: 0.2rem;
-
-      a {
-        text-decoration: none;
-      }
-      a > span {
-        background-color: #fff;
-        color: var(--tele-black);
-        padding: 5px;
-        line-height: 1.5;
-      }
-    }
-  }
+  
   .header-container {
     display: flex;
     flex-direction: column;

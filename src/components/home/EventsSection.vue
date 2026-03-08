@@ -10,7 +10,9 @@ import TagChip from '@/components/TagChip.vue';
       <div>
         <div class="container">
           <div>
-            <h3>Spotkanie koła</h3>
+            <h3>Spotkanie koła
+              <TagChip text="04.03.2026" invert/>
+            </h3>
             <div class="tags">
               <TagChip text="Spotkanie"/><TagChip text="Dla członków"/>
 
@@ -30,7 +32,8 @@ import TagChip from '@/components/TagChip.vue';
       <div>
         <div class="container">
           <div>
-            <h3>Rekrutacja 2026</h3>
+            <h3>Rekrutacja 2026 
+              <TagChip text="01.01.2026"/></h3>
             <div class="tags">
               <TagChip text="rekrutacja" invert/>
             </div>
@@ -57,6 +60,7 @@ import TagChip from '@/components/TagChip.vue';
   }
   h5 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
   }
   h2,
   h4 {
@@ -81,7 +85,6 @@ import TagChip from '@/components/TagChip.vue';
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 3vh;
   background: var(--tele-black);
 
   .home-article {
@@ -99,7 +102,7 @@ import TagChip from '@/components/TagChip.vue';
     width: 100%;
   }
 }
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 750px){
   .projects-panel{
     padding:2rem 0rem;
   }

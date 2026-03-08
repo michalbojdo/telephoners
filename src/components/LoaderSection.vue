@@ -24,6 +24,7 @@ const props = defineProps(["loading"]);
 main.loader {
   background-color: var(--tele-black);
   position: fixed;
+  z-index:50;
   top: 0;
   left: 0;
   width: 100vw;

@@ -1,11 +1,28 @@
 <template>
-<footer><h2>AGH</h2></footer>
+  <footer>
+    <a>SKN Telephoners 2026</a>
+    <a>Statut</a>
+    <a>telephoners@agh.edu.pl</a>
+    <a>Zarząd</a>
+    <a></a><a>Panel członka ⤴</a>
+  </footer>
 </template>
 <style>
-footer{
-    width:100%;
-    background-color: var(--tele-black);
-    padding:2rem 1rem;
-    border-top: 1rem #fff ridge;
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  display: grid;
+  grid: 1fr/1fr 1fr;
+  width: 100%;
+  background-color: var(--tele-black);
+  background-image: repeating-radial-gradient(
+    circle at 50% 0%,
+    transparent 0px,
+    transparent 40px,
+    #ffffff08 8px,
+    #ffffff08 48px
+  );
+  padding: 1rem 1rem;
+  border-top: 8px #080808 solid;
 }
 </style>

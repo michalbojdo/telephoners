@@ -5,6 +5,15 @@ import WelcomeSection from "@/components/home/WelcomeSection.vue";
 import AboutSection from "@/components/home/AboutSection.vue";
 import EventsSection from "@/components/home/EventsSection.vue";
 import FooterSection from "@/components/FooterSection.vue";
+
+import { useBreakpoints } from '@vueuse/core'
+
+const breakpoints = useBreakpoints({
+  mobile: 750,
+  tablet: 1000,
+})
+const isMobile = breakpoints.smaller('mobile')
+
 </script>
 
 <template>
@@ -16,7 +25,7 @@ import FooterSection from "@/components/FooterSection.vue";
     <div class="home-sections">
       <div>
         <ProjectsSection />
-        <AboutSection />
+        <AboutSection v-if="!isMobile"/>
       </div>
       <EventsSection />
     </div>
@@ -49,6 +58,9 @@ import FooterSection from "@/components/FooterSection.vue";
     }
   }
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 750px) {
+  .home-sections {
+    flex-direction: column-reverse;
+  }
 }
 </style>
