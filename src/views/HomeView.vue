@@ -70,7 +70,8 @@ const isMobile = breakpoints.smaller("mobile");
     flex-direction: column;
   }
   .home-start {
-    grid-template-rows: 1fr 3fr 1fr;
+    height:100vh;
+    grid-template-rows: 1fr 2.5fr 1fr;
   }
 }
 </style>

@@ -158,7 +158,8 @@ h3 {
   }
 
   .home-h1 {
-    font-size: 6ch;
+    padding:0 0.5rem;
+    font-size: 5.8ch;
     align-self: end;
   }
 }
