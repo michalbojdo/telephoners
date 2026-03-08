@@ -5,7 +5,7 @@ import HeaderSection from "@/components/HeaderSection.vue";
 <template>
   <div class="background-image" />
 
-  <h1>
+  <h1 class="home-h1">
     SKN<br />
     TELE<br />PHON<br />ERS
   </h1>
@@ -157,8 +157,8 @@ h3 {
     }
   }
 
-  h1 {
-    font-size: 23vw;
+  .home-h1 {
+    font-size: 6ch;
     align-self: end;
   }
 }
