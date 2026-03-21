@@ -1,13 +1,15 @@
 <script setup>
 const props = defineProps({
     'text':String,
-    'invert':Boolean
+    'bright':Boolean,
+    
+    'nokia': Boolean
 })
-console.log(props.invert)
+console.log(props)
 </script>
 
 <template>
-    <div :class="props.invert ? 'tag invert':'tag'">
+    <div :class="{tag:true, nokia: props.nokia, bright: props.bright}">
         {{ props.text }}
     </div>
 </template>
@@ -16,14 +18,18 @@ console.log(props.invert)
 .tag{
     font-size: xx-small;
     text-transform: uppercase;
-    background-color: var(--tele-black);
-    color:#fff;
+    background-color: #fff;
+    color:var(--tele-black);
     padding:4px;
     margin-right:4px;
     border-radius: 4px;
 }
-.invert{
+.bright{
+    background-color: var(--tele-black);
+    color: #fff;
+}
+.nokia{
     background-color: #fff;
-    color: var(--tele-black);
+    color: var(--nokia)
 }
 </style>

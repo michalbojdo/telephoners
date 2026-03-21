@@ -13,13 +13,7 @@
                 zapewnienia tymczasowej łączności telekomunikacyjnej i analizy
                 wideo w czasie rzeczywistym w trudno dostępnych miejscach
               </h5>
-              <!-- <div class="grants">
-              <h4 class="grant">grant <br />rektora <br />2023</h4>
-              <h4 class="grant">grant <br />rektora <br />2024</h4>
-
-              <h4 class="grant">grant <br />rektora <br />2025</h4>
-            </div> -->
-              <h4>Więcej-></h4>
+              <!-- <h4><RouterLink to="/projects/AghRescueDrone">Więcej-></RouterLink></h4> -->
             </div>
           </div>
         </div>
@@ -30,12 +24,15 @@
             <div>
               <h3>Aplikacja miasteczkowa</h3>
               <h5>
-                Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
-                systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
-                zapewnienia tymczasowej łączności telekomunikacyjnej i analizy
-                wideo w czasie rzeczywistym w trudno dostępnych miejscach
+                Aplikacja Miasteczkowa ma na celu ułatwienie studentom
+                organizacji spotkań, koordynacji imprez oraz odnajdywania się w
+                dużych grupach na terenie miasteczka akademickiego. Dzięki
+                zastosowaniu technologii GPS i systemów lokalizacji opartych na
+                mocy sygnału, aplikacja pozwala na szybkie odnalezienie
+                znajomych w określonym obszarze oraz zapraszanie ich do
+                wspólnych aktywności
               </h5>
-              <h4>Więcej-></h4>
+              <!-- <h4>Więcej-></h4> -->
             </div>
           </div>
         </div>
@@ -46,12 +43,15 @@
             <div>
               <h3>Smart szklarnia</h3>
               <h5>
-                Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
-                systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
-                zapewnienia tymczasowej łączności telekomunikacyjnej i analizy
-                wideo w czasie rzeczywistym w trudno dostępnych miejscach
+                Celem projektu jest stworzenie zdalnego systemu zarządzania
+                swoimi uprawami dedykowany dla pasjonatów rolnictwa, właścicieli
+                ogrodów działkowych ale także dla małych przedsiębiorstw
+                rolnych. Główną ideą było przeniesienie założń Internet of
+                Things do użytku w rolnictwie, gdzie każdy prowadzący swój
+                ogródek mógłby doglądać poziomu nawodnienia oraz jakości swoich
+                upraw w domowym zaciszu
               </h5>
-              <h4>Więcej-></h4>
+              <!-- <h4>Więcej-></h4> -->
             </div>
           </div>
         </div>
@@ -102,6 +102,10 @@ h3 {
   }
   h4 {
     font-size: x-small;
+    a {
+      color: var(--tele-black);
+      background-color: #fff;
+    }
   }
   .grants {
     display: flex;
@@ -135,8 +139,8 @@ h3 {
   .home-panel {
     padding: 2rem 0rem;
   }
-  .icons-article{
-    display:none;
+  .icons-article {
+    display: none;
   }
 }
 </style>

@@ -2,18 +2,23 @@
   <main class="about-panel home-panel">
     <h2>O NAS</h2>
     <p>
-      The Telephoners Scientific Club operates at the Institute of
-      Telecommunications at the Faculty of Computer Science, Electronics and
-      Telecommunications (CET). It gathers students from both the Faculty of CET
-      and beyond. Telephoners exchange knowledge from various fields and carry
-      out various scientific and hobby projects.
+      Koło Naukowe Telephoners zrzesza pasjonatów
+      telekomunikacji, informatyki i elektroniki, którzy chcą rozwijać swoje
+      zainteresowania i realizować praktyczne projekty z pogranicza tych
+      dziedzin. Wśród projektów znajdziesz rozwiązania sieciowe,
+      elektroniczne i informatyczne. Oprócz pracy nad projektami organizują warsztaty i wykłady z
+      przedstawicielami największych firm IT działających w Krakowie, dzięki
+      czemu członkowie mogą rozwijać kompetencje techniczne i zawodowe.
     </p>
     <articles>
       <article class="home-article article-1">
         <div class="container">
           <div>
             <h3>Działamy</h3>
-            <h5>od 2001 roku, a przez ten czas Telephonersi zrealizowali setki własnych projeków</h5>
+            <h5>
+              od 2001 roku, a przez ten czas Telephonersi zrealizowali setki
+              własnych projeków
+            </h5>
           </div>
         </div>
       </article>

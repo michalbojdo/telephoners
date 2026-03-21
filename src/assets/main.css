@@ -34,6 +34,13 @@ articles {
   position: relative;
 }
 
+.home-article{
+.container {
+    padding: 1rem 1rem;
+    z-index: -2;
+  }
+}
+
 .article-1 {
   color: var(--tele-black);
   /* border: 0.5rem #fff ridge;
@@ -46,17 +53,12 @@ articles {
       #ffffff80 48px
     ); */
   .container {
-    padding: 1rem 1rem;
-    z-index: -2;
     background-color: rgba(255, 255, 255, 1);
   }
 }
 .article-2 {
-  /* border: 0.5rem var(--tele-black) ridge; */
-
-  .container {
-    z-index: -2;
-    padding: 2rem 1rem;
+  color: #fff;
+  .container{
   }
 }
 .article-3 {
@@ -64,11 +66,10 @@ articles {
 
   color: #fff;
   .container {
-    z-index: -2;
-    padding: 2rem 1rem;
-    background-color: transparent;
+    background-color: var(--nokia);
   }
 }
+
 
 @media only screen and (max-width: 745px) {
   .home-article {

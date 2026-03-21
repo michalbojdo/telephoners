@@ -24,7 +24,7 @@ const isMobile = breakpoints.smaller("mobile");
     <div class="home-sections">
       <div>
         <ProjectsSection />
-        <AboutSection v-if="!isMobile" />
+        <AboutSection/>
       </div>
       <EventsSection />
     </div>

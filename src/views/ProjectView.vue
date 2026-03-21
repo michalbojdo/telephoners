@@ -1,11 +1,23 @@
 <script setup>
 import HeaderSection from "@/components/HeaderSection.vue";
+import { useRoute} from "vue-router";
+
+const projectID = useRoute().params.projectID;
+console.log(projectID)
+
+const props = defineProps({
+  'project': String
+})
+
 </script>
 
 <template>
   <div class="cont project-view">
     <div class="background-image-project" />
-
+    <HeaderSection/>
+    <h1>
+      <a @click="$router.go(-1)"><</a>
+    </h1>
     <h1>
       AGH<br />
       RESCUE<br />
@@ -23,20 +35,29 @@ import HeaderSection from "@/components/HeaderSection.vue";
       </h3>
     </div>
   </div>
+  <div class="project-content">
+    <h2>Cele</h2>
+  </div>
 </template>
 
 <style>
 .project-view {
-  align-content: end;
+  display:grid;
+  height: 100%;
+  min-height: 100vh;
+  align-items:space-between;
+
+  background-image: repeating-radial-gradient(
+    circle at 50% 100%,
+    transparent 0px,
+    transparent 50px,
+    #ffffff10 50px,
+    #ffffff10 52px
+  );
 }
 .header-container {
   display: flex;
   flex-direction: column;
-}
-.tele-panel {
-  padding: 1rem 0rem 0rem 0rem;
-  display: flex;
-  flex-direction: column-reverse;
 }
 h1 {
   width: 100%;
@@ -51,6 +72,9 @@ h1 {
   }
   img {
     height: 16vw;
+  }
+  a{
+    text-decoration: none;
   }
 }
 h3:not(has(span)) {
@@ -74,13 +98,8 @@ h3:not(has(span)) {
 }
 
 .background-image-project {
+  filter: grayscale(2) contrast(4) brightness(0.6) blur(4px);
   background-image: url("@/assets/projects/rescue-drone/banner.webp");
-  /* background: linear-gradient(to bottom, rgb(88, 88, 88), transparent);  
-  background-color: #000000;
-opacity: 0.8;
-background-image: linear-gradient(45deg, #00f 50%, #000000 50%);
-background-size: 37px 37px; */
-  filter: opacity(1) saturate(1) brightness(0.8);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
