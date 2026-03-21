@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import HeaderSection from "@/components/HeaderSection.vue";
 import { useRoute} from "vue-router";
 
@@ -77,7 +77,7 @@ h1 {
     text-decoration: none;
   }
 }
-h3:not(has(span)) {
+/* h3:not(has(span)) {
   line-height: 1.1;
   font-size: 2vw;
   margin: 8px 2px;
@@ -95,7 +95,7 @@ h3:not(has(span)) {
   a:hover {
     font-style: italic;
   }
-}
+} */
 
 .background-image-project {
   filter: grayscale(2) contrast(4) brightness(0.6) blur(4px);

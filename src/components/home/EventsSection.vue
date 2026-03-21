@@ -41,17 +41,23 @@ import TagChip from "@/components/TagChip.vue";
       <div>
         <div class="container">
           <div>
-            <h3>Spotkanie koła</h3>
+            <h3>Cyberwave</h3>
             <div class="tags">
-              <TagChip text="04.03.2026" bright />
-              <TagChip text="Spotkanie" bright />
-              <TagChip text="Dla członków" bright />
+              <TagChip text="10/11.03.2026" bright />
+              <TagChip text="D6 | B9" bright />
+              <TagChip text="AI" bright />
+              <TagChip text="Cybersec" bright />
             </div>
             <h5>
-              Projekt AGH Rescue Drone ma na celu stworzenie zaawansowanego
-              systemu wsparcia ratunkowego, który wykorzystuje rój dronów do
-              zapewnienia tymczasowej łączności telekomunikacyjnej i analizy
-              wideo w czasie rzeczywistym w trudno dostępnych miejscach
+              Przypominamy o zbliżającej się konferencji CyberWave, która już
+              10–11 marca 2026 odbędzie się na kampusie AGH. To świetna
+              okazja, żeby poszerzyć wiedzę o AI, cyberbezpieczeństwie i
+              bezpiecznej komunikacji, poznać najnowsze trendy z branży oraz
+              spotkać ludzi, którzy na co dzień tworzą technologie przyszłości.
+              W programie m.in. prelekcje o najnowszych technologiach i
+              rozwiązaniach z rynku, warsztaty prowadzone przez specjalistów z
+              uznanych firm, networking z przedstawicielami branży, konkursy
+              tematyczne z nagrodami
             </h5>
             <!-- <h4>Więcej-></h4> -->
           </div>
@@ -74,9 +80,8 @@ import TagChip from "@/components/TagChip.vue";
               rozwijać swoje zainteresowania i realizować praktyczne projekty z
               pogranicza tych dziedzin. Rekrutacja jest otwarta — zapraszamy
               wszystkich, którzy chcą poszerzać swoje horyzonty i działać w
-              zespole z pasją!
-               Telephonersi spotykają się co dwa tygodnie, w środy o 18:30
-              sala 011, budynek B9
+              zespole z pasją! Telephonersi spotykają się co dwa tygodnie, w
+              środy o 18:30 sala 011, budynek B9
             </h5>
             <!-- <h4>Więcej-></h4> -->
           </div>
